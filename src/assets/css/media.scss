@@ -1,0 +1,185 @@
+@media (max-width: 480px) {
+  .customer-reviews {
+    width: 97% !important;
+  }
+}
+@media (max-width: 767px) {
+  .header-side-panel {
+    display: none;
+  }
+  .holder.holder-mt-medium {
+    margin-top: 0 !important;
+  }
+  .my-dropdn-content {
+    padding: 20px !important;
+    width: 100% !important;
+    .minicart-prd-qty-value {
+      margin-left: 20px;
+    }
+    .minicart-prd-info {
+      justify-content: space-between;
+    }
+    .minicart-prd-action {
+      top: 65% !important;
+      left: 5% !important;
+    }
+    .total-all2 {
+      flex-shrink: 0 !important;
+      flex-grow: 1 !important;
+      flex-basis: 24% !important;
+      text-align: end !important;
+    }
+  }
+  .slick-arrow {
+    opacity: 1 !important;
+  }
+  .prd-block_info {
+    display: block !important;
+  }
+  .mySwiper {
+    display: none !important;
+  }
+  .books {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
+    padding: 15px !important;
+    justify-items: center;
+    .prd-info {
+      height: auto;
+      justify-content: space-between;
+    }
+    &::before {
+      display: none !important;
+    }
+  }
+  .customer-reviews {
+    // width: 100%;
+    width: 600px;
+  }
+  .swiper-button-prev {
+    right: 40% !important;
+  }
+  .swiper-button-next {
+    left: 40% !important;
+  }
+  .js-prd-gallery {
+    flex-direction: column;
+  }
+  .cart-table {
+    .cart-table-prd-name {
+      text-align: center;
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+    .cart-table-prd-info {
+      padding: 10px !important;
+      display: flex;
+      flex-direction: column;
+      .cart-table-prd-price {
+        max-height: 36px;
+        flex: 1 0 50px !important;
+        max-width: calc(100%) !important;
+        order: 1;
+        flex-direction: row !important;
+        .price-new,
+        .price-old {
+          flex: 1 0 50% !important;
+          text-align: center;
+          margin: 0 !important;
+        }
+      }
+    }
+    .cart-table-prd {
+      padding: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .cart-table-prd-action.remove-button {
+        position: absolute;
+        top: 10px !important;
+        right: auto;
+        left: 10px !important;
+        padding: 0 !important;
+      }
+      .cart-table-prd-image {
+        flex: 0 0 250px !important;
+        max-width: 250px !important;
+        padding: 0 !important;
+        * {
+          padding: 0 !important;
+        }
+      }
+      .cart-table-prd-content-wrap {
+        padding: 0;
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        * {
+          padding: 0 !important;
+          font-size: 15px;
+        }
+        .cart-table-prd-info {
+          margin-bottom: 0;
+        }
+        .cart-table-prd-qty {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          > {
+            div {
+              flex: 1 0 50%;
+              text-align: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .hide-mobile.nav-header {
+    width: 0;
+    height: 0;
+    padding: 0 !important;
+    margin: 0;
+    display: block !important;
+    ul {
+      background-color: rgb(255 255 255 / 65%);
+      backdrop-filter: blur(9px);
+      overflow: hidden;
+      transition: all 0.3s;
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+      position: fixed;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 0;
+      z-index: 999;
+      margin: 0;
+      &.active {
+        box-shadow: 0 0.125rem 0.25rem #00000054;
+        height: 36%;
+        border-top: 1px solid #fff2;
+        border-left: 1px solid #fff2;
+      }
+      a {
+        &:hover {
+          color: #00c2c4;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1025px) {
+}
+@media (min-width: 768px) {
+  .dropdn-content.is-opened .my-dropdn-content {
+    left: 0 !important;
+  }
+}
