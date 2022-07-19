@@ -2,6 +2,7 @@
   "compilerOptions": {
     // "noUnusedLocals": false,
     // "noUnusedParameters": false,
+
     "jsx": "preserve",
     "target": "es5",
     "module": "esnext",
@@ -10,6 +11,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    
   }
 }

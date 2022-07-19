@@ -4,5 +4,8 @@ module.exports = defineConfig({
 });
 
 module.exports = {
+  performance: {
+    hints: false,
+  },
   publicPath: process.env.NODE_ENV === "production" ? "/e-commerce" : "/",
 };
