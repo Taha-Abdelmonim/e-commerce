@@ -3,6 +3,13 @@
     <nav class="header-top">
       <Header />
     </nav>
+    <div class="loader-wrapper">
+      <div class="loder-crcil"></div>
+      <div class="loder-crcil new-loader"></div>
+      <div class="loader-statice"></div>
+      <div class="loader-statice new-statice"></div>
+      <img class="text" src="./assets/logo.svg" />
+    </div>
     <router-view></router-view>
     <Footer />
   </div>
@@ -59,6 +66,7 @@ export default {
         }
       };
     },
+    
   },
 };
 </script>
@@ -115,5 +123,60 @@ export default {
   border-radius: 5px;
   padding: 15px;
   color: #383838;
+}
+// loader
+.loader-wrapper {
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-statice {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 2px #afaaaa;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.loder-crcil {
+  box-shadow: 3px 0 0px #000;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  animation: loader 1s linear infinite;
+  position: absolute;
+}
+.new-loader {
+  width: 200px;
+  height: 200px;
+  animation: loader 1s linear infinite reverse;
+}
+.new-statice {
+  box-shadow: 0 0 2px #afaaaa;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.text {
+  width: 150px;
+  height: 150px;
+  // border-radius: 50%;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
 }
 </style>

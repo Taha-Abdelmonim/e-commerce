@@ -461,6 +461,7 @@ export default {
     await this.handelClickAddToCart(".handel-click.active");
     await this.GET_RATES();
     await this.customerReviewsSlide();
+    await this.hideLoader();
   },
   methods: {
     ...mapActions("Books", ["GET_BOOKS", "GET_CATEGORIES", "GET_IS_ACTIVE"]),
@@ -533,7 +534,14 @@ export default {
         });
       });
     },
-
+    hideLoader() {
+      $(document).ready(function () {
+        let loader = $(".loader-wrapper");
+        loader.fadeOut(1000, function () {
+          this.remove();
+        });
+      });
+    },
   },
 };
 // hovered
@@ -601,6 +609,7 @@ export default {
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 6%);
     border-radius: 5px;
     padding: 10px;
+    min-height: 270px;
   }
   .content-bottom {
     text-align: center;
@@ -638,5 +647,8 @@ export default {
   .slick-slide {
     background: #fff;
   }
+}
+.customer-reviews {
+  width: 95%;
 }
 </style>
