@@ -1,4 +1,3 @@
-
 /*-----------------------------------------------------------------------------------
  Theme Name: Foxic eCommerce Template
  Author: BigSteps
@@ -3451,7 +3450,7 @@ function onYouTubeIframeAPIReady() {
                 }
               } else {
                 if ($body.hasClass("has-sticky")) {
-                  that._removeSticky();
+                  // that._removeSticky();
                 }
               }
             }
@@ -3518,7 +3517,7 @@ function onYouTubeIframeAPIReady() {
           },
           _setSticky: function _setSticky() {
             var that = this;
-            $body.addClass("has-sticky");
+            // $body.addClass("has-sticky");
             $(that.defaults.header)
               .find(".is-hovered .dropdn-link")
               .each(function () {
@@ -3528,7 +3527,7 @@ function onYouTubeIframeAPIReady() {
               });
           },
           _removeSticky: function _removeSticky() {
-            $body.removeClass("has-sticky");
+            // $body.removeClass("has-sticky");
           },
           _setHeigth: function _setHeigth() {
             var $header = $(this.defaults.header),
@@ -3544,7 +3543,7 @@ function onYouTubeIframeAPIReady() {
                 height: $hdrNav.outerHeight(),
               });
             } else {
-              $body.removeClass("has-sticky");
+              // $body.removeClass("has-sticky");
             }
             return this;
           },
@@ -4507,7 +4506,6 @@ function onYouTubeIframeAPIReady() {
     },
   };
   THEME.product = {
-		
     init: function init() {
       this.productPageGallery(false);
       this.productHoverHeight(".prd");
@@ -4515,7 +4513,6 @@ function onYouTubeIframeAPIReady() {
       this.actionPrd();
       this.swatchToSelect();
       this.swatchToggle(".prd-color.swatches");
-			
     },
     swatchToSelect: function swatchToSelect() {
       var swatch = ".js-size-list a";
@@ -4541,7 +4538,7 @@ function onYouTubeIframeAPIReady() {
           $carousel = $productblock.find(".product-main-carousel"),
           $previewsCarousel = $productblock.find(".product-previews-carousel");
         if (!$optionlist.hasClass("js-list-filter")) {
-					console.log("Header")
+          console.log("Header");
           $optionlist
             .find("a[data-value='" + $optionselect.val() + "']")
             .parent()
